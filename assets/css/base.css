@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* font-family: 'Pacifico', cursive; */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  background-color: var(--white);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--white);
+}
+
+:root {
+  --primary-color: #ff6600;
+  --secondary-color: #ffc600;
+  --font-color: rgba(22, 28, 45, 0.7);
+  --bg-black: #232220;
+}
+
+/* common */
+.title {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: var(--primary-color);
+  font-family: 'Pacifico', cursive;
+}
+
+.sub-title {
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 600;
+}
+
+.diner__btn {
+  display: inline-block;
+  margin-top: 48px;
+  padding: 12px 48px;
+  border: 2px solid var(--white);
+  border-radius: 6px;
+  background-color: transparent;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  transition: all 0.3s ease-in;
+}
+
+.diner__btn:hover {
+  background-color: var(--white);
+  color: var(--primary-color);
+}
+
+.diner__btn i {
+  font-weight: 700;
+}
