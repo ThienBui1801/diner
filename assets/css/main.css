@@ -256,4 +256,50 @@
 
 /* menu */
 
-/* countup */
+/* middle */
+#middle {
+  background: url(../images/banner2.jpg) 100% center / cover no-repeat;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+}
+
+#middle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100%;
+  background-color: rgba(16, 15, 19, 66%);
+  z-index: -1;
+}
+
+.middle__content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.middle__content h1 {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 55px;
+  color: var(--white);
+  max-width: 700px;
+  text-align: center;
+}
+
+.middle__btn a:first-of-type {
+  margin-right: 30px;
+}
+
+.middle__btn a:last-of-type {
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.middle__btn .diner__btn:hover:last-of-type {
+  background-color: var(--white);
+  border: 2px solid var(--white);
+}
