@@ -279,6 +279,7 @@
 .middle__content {
   max-width: 700px;
   margin: 0 auto;
+  padding: 48px 0;
 }
 
 .middle__content h1 {
@@ -302,4 +303,50 @@
 .middle__btn .diner__btn:hover:last-of-type {
   background-color: var(--white);
   border: 2px solid var(--white);
+}
+
+/* count */
+#count {
+  position: relative;
+  z-index: 100;
+  margin-top: -70px;
+}
+
+.count__item {
+  background-color: var(--white);
+  box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
+  padding: 40px 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.5s ease;
+}
+
+.count__item:hover {
+  transform: translateY(-8px);
+  box-shadow: rgb(46 41 51 / 8%) 0px 2px 4px, rgb(71 63 79 / 16%) 0px 5px 10px;
+}
+
+.count__item span i {
+  display: inline-block;
+  background: var(--primary-color);
+  font-size: 26px;
+  border-radius: 50%;
+  width: 68px;
+  height: 68px;
+  line-height: 68px;
+  color: var(--white);
+  text-align: center;
+}
+
+.count__item h1 {
+  font-size: 42px;
+  font-weight: 600;
+  color: var(--black);
+  margin-top: 16px;
+}
+
+.count__item p {
+  text-transform: capitalize;
+  color: var(--font-color);
+  font-weight: 600;
 }
