@@ -232,7 +232,7 @@
   transition: 0.3s ease-in-out;
 }
 
-.subscribe__rate .subscribe__rate-left:hover i, 
+.subscribe__rate .subscribe__rate-left:hover i,
 .subscribe__rate .subscribe__rate-right:hover i {
   color: var(--secondary-color);
 }
@@ -349,4 +349,238 @@
   text-transform: capitalize;
   color: var(--font-color);
   font-weight: 600;
+}
+
+/* media */
+.media-item {
+  background-color: var(--white);
+}
+
+.media__video {
+  background: url(../images/banner3.jpg) center / cover no-repeat;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  align-items: center;
+  min-height: 500px;
+  border-radius: 6px;
+}
+
+.media__video::before {
+  content: '';
+  position: absolute;
+  background: rgb(16 15 19 / 60%);
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100%;
+  z-index: -1;
+  border-radius: 6px;
+}
+
+.media__play-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.media__play-btn span {
+  display: inline-block;
+  width: 80px;
+  height: 80%;
+  font-size: 26px;
+  text-align: center;
+  line-height: 76px;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+  animation: ripple 1s linear infinite;
+  color: var(--primary-color);
+  border: transparent;
+  background: var(--white);
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgb(255 255 255 / 25%), 
+    0 0 0 10px rgb(255 255 255 / 25%), 
+    0 0 0 20px rgb(255 255 255 / 25%);
+  }
+
+  100% {
+    box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 
+    0 0 0 20px rgb(255 255 255 / 25%), 
+    0 0 0 40px rgb(50 100 245 / 0%);
+  }
+}
+
+.media__play-video {
+  max-width: 750px;
+  margin: 40px auto;
+  position: relative;
+}
+
+.hide {
+  display: none;
+}
+
+/* blog */
+
+/* testimonial */
+
+/* footer */
+#footer {
+  background-color: var(--color-black);
+  width: 100%;
+  height: auto;
+}
+
+.footer__title.h1 {
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--white);
+  
+}
+
+.footer__title  {
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.fz-30 {
+  font-size: 30px;
+}
+
+.footer__desc {
+  font-size: 16px;
+  line-height: 26px;
+  color: #a5a2a1;
+}
+
+.footer__icon-social {
+  display: flex;
+  margin-top: 24px;
+}
+
+.footer__icon-social li a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 36px;
+  border-radius: 6px;
+  background-color: var(--white);
+  color: var(--primary-color);
+  transition: all 0.5s;
+  margin-right: 16px;
+}
+
+.footer__icon-social li:hover a {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.footer__list li {
+  margin-bottom: 10px;
+}
+
+.footer__list li a {
+  font-size: 16px;
+  line-height: 26px;
+  color: #a5a2a1;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.footer__list li:hover a {
+  color: var(--secondary-color);
+}
+
+.footer__list li a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: transparent;
+  transition: all 0.5s;
+}
+
+.footer__list li a:hover::after {
+  background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
+  width: 100%;
+}
+
+.footer__form input {
+  padding: 14px 20px;
+  font-size: 18px;
+  line-height: 28px;
+  border: 1px solid transparent;
+  outline: none;
+  width: 100%;
+  color: var(--font-color);
+  background-color: var(--white);
+  border-radius: 6px;
+}
+
+.footer__form .diner__btn {
+  margin-top: 16px;
+  padding: 12px 45px;
+  line-height: 30px;
+  font-weight: 600;
+  transition: 0.3s ease-in;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  background-color: var(--primary-color);
+  width: 100%;
+}
+
+.footer__form .diner__btn:hover {
+  color: var(--primary-color);
+  background-color: var(--white);
+}
+
+.footer__bottom {
+  margin-top: 48px;
+  padding: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer__bottom p {
+  margin-bottom: 0;
+  align-items: center;
+  color: #ddd;
+  font-size: 16px;
+}
+
+.footer__bottom p a {
+  color: var(--primary-color);
+  font-weight: 600;
+  transition: all 0.5s;
+}
+
+.footer__bottom p a:hover {
+  color: var(--white);
+}
+
+.footer__bottom-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.footer__bottom-list li a {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #a5a2a1;
+  transition: all 0.5s;
+}
+
+.footer__bottom-list li:hover a {
+  color: var(--primary-color);
 }
