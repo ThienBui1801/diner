@@ -1,7 +1,8 @@
 /* banner */
 #banner {
   height: 100vh;
-  background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)), url(../images/banner1.jpg);
+  background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)),
+    url(../images/banner1.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -191,7 +192,7 @@
 }
 
 .subscribe__img::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -253,6 +254,53 @@
 }
 
 /* categories */
+.categories__body {
+  padding-top: 40px;
+}
+
+.categories__item {
+  position: relative;
+}
+
+.categories__item img {
+  display: block;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.categories__content {
+  position: absolute;
+  bottom: 16px;
+  left: 40px;
+}
+
+/* .categories__content::after {
+  content: "";
+  position: inherit;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0.53) 69%,
+    rgba(0, 0, 0, 0.76) 100%
+  );
+} */
+
+.categories__content p:first-of-type {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.categories__content p:last-of-type {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--secondary-color);
+  letter-spacing: 1px;
+}
 
 /* menu */
 
@@ -266,7 +314,7 @@
 }
 
 #middle::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -367,7 +415,7 @@
 }
 
 .media__video::before {
-  content: '';
+  content: "";
   position: absolute;
   background: rgb(16 15 19 / 60%);
   top: 0;
@@ -400,15 +448,13 @@
 
 @keyframes ripple {
   0% {
-    box-shadow: 0 0 0 0 rgb(255 255 255 / 25%), 
-    0 0 0 10px rgb(255 255 255 / 25%), 
-    0 0 0 20px rgb(255 255 255 / 25%);
+    box-shadow: 0 0 0 0 rgb(255 255 255 / 25%),
+      0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
   }
 
   100% {
-    box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 
-    0 0 0 20px rgb(255 255 255 / 25%), 
-    0 0 0 40px rgb(50 100 245 / 0%);
+    box-shadow: 0 0 0 10px rgb(255 255 255 / 25%),
+      0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgb(50 100 245 / 0%);
   }
 }
 
@@ -438,10 +484,9 @@
   font-weight: 600;
   text-transform: capitalize;
   color: var(--white);
-  
 }
 
-.footer__title  {
+.footer__title {
   font-size: 22px;
   font-weight: 600;
   text-transform: capitalize;
@@ -500,7 +545,7 @@
 }
 
 .footer__list li a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -511,7 +556,11 @@
 }
 
 .footer__list li a:hover::after {
-  background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(
+    180deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
   width: 100%;
 }
 
@@ -630,4 +679,3 @@
 .sidebar__list li a span {
   padding-top: 4px;
 }
-
