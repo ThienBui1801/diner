@@ -1,6 +1,6 @@
 /* banner */
 #banner {
-  height: 100vh;
+  min-height: 700px;
   background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)),
     url(../images/banner1.jpg);
   background-repeat: no-repeat;
@@ -89,7 +89,11 @@
   text-align: left;
 }
 
-.banner__content h1 {
+.banner__title {
+  margin-left: -15px;
+}
+
+.banner__title h1 {
   font-size: 54px;
   line-height: 64px;
   font-weight: 600;
@@ -97,7 +101,7 @@
   color: var(--white);
 }
 
-.banner__content p {
+.banner__title p {
   margin-top: 24px;
   padding-right: 48px;
   font-size: 16px;
@@ -189,7 +193,7 @@
 
 .subscribe__img {
   background: url(../images/banner3.jpg) top center / cover no-repeat;
-  min-height: 600px;
+  min-height: 700px;
   position: relative;
   z-index: 1;
 }
@@ -625,12 +629,14 @@
 
 .blog__footer-member span {
   display: inline-block;
+  font-size: 12px;
   font-weight: 900;
   padding-left: 8px;
 }
 
 .blog__footer a {
   color: var(--orange-color);
+  font-size: 12px;
   font-weight: 800;
   transition: all 0.5s;
 }
