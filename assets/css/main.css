@@ -919,3 +919,29 @@
 .sidebar__list li a span {
   padding-top: 4px;
 }
+
+/* back to top */
+.btn-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: inline-block;
+  z-index: 1000;
+}
+
+.btn-top i {
+  color: var(--secondary-color);
+  display: block;
+  text-align: center;
+  line-height: 60px;
+  font-size: 48px;
+}
+
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top--fade-out {
+  opacity: 0;
+}

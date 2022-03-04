@@ -16,6 +16,10 @@ body {
   color: #212121;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a:hover {
   text-decoration: none;
   color: var(--white);
