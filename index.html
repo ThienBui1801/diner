@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Dinner Restaurant</title>
+  <title>Diner Restaurant</title>
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -30,7 +30,6 @@
   <!-- CSS -->
   <link rel="stylesheet" href="./assets/css/base.css" />
   <link rel="stylesheet" href="./assets/css/main.css" />
-  <link rel="stylesheet" href="./assets/css/responsive.css" />
 </head>
 
 <body>
@@ -47,14 +46,14 @@
               <input class="search__input" type="search" placeholder="Search here..." />
               <span><i class="ti-search"></i></span>
             </form>
-            <div class="icon__change">
+            <button id="btn-color" class="icon__change">
               <span class="light">
-                <i class="far fa-sun"></i>
+                <i id="icon" class="far fa-sun"></i>
               </span>
-              <span class="night">
+              <!-- <span class="night">
                 <i class="far fa-moon"></i>
-              </span>
-            </div>
+              </span> -->
+            </button>
             <button class="menu__btn">
               <i class="ti-menu"></i>
             </button>
@@ -139,10 +138,10 @@
   <section id="subscribe">
     <div class="container-fluid px-lg-0">
       <div class="row mx-0">
-        <div class="col-lg-6 col-md-6 col-sm-12 px-0">
+        <div class="col-lg-6 col-md-12 col-sm-12 px-0">
           <div class="subscribe__img"></div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 px-lg-4 py-lg-3 py-4">
+        <div class="col-lg-6 col-md-12 col-sm-12 px-lg-4 py-lg-3 py-4">
           <div class="subscribe__content p-md-5">
             <h1 class="title">More than 3000 Restaurants</h1>
             <h4 class="sub-title">Book a table easly at the best price</h4>
@@ -214,7 +213,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+          <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="categories__item">
               <img class="img-fluid" src="./assets/images/g4.jpg" alt="">
               <div class="categories__content">
@@ -223,7 +222,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+          <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="categories__item">
               <img class="img-fluid" src="./assets/images/g5.jpg" alt="">
               <div class="categories__content">
@@ -232,7 +231,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 mt-4">
+          <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="categories__item">
               <img class="img-fluid" src="./assets/images/g1.jpg" alt="">
               <div class="categories__content">
@@ -248,7 +247,96 @@
   <!-- End Categories -->
 
   <!-- Begin Menu -->
-  <section id="menu"></section>
+  <section id="menu">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="menu__item">
+            <div class="menu__heading">
+              <i class="fas fa-users"></i>
+              <div class="menu__content">
+                <p>01</p>
+                <h4><a href="#">Soup</a></h4>
+              </div>
+            </div>
+            <div class="menu__body">
+              <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="menu__item">
+            <div class="menu__heading">
+              <i class="fas fa-glass-martini"></i>
+              <div class="menu__content">
+                <p>02</p>
+                <h4><a href="#">Drinks</a></h4>
+              </div>
+            </div>
+            <div class="menu__body">
+              <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="menu__item">
+            <div class="menu__heading">
+              <i class="fas fa-pizza-slice"></i>
+              <div class="menu__content">
+                <p>03</p>
+                <h4><a href="#">Pizza</a></h4>
+              </div>
+            </div>
+            <div class="menu__body">
+              <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="menu__item">
+            <div class="menu__heading">
+              <i class="fas fa-coffee"></i>
+              <div class="menu__content">
+                <p>04</p>
+                <h4><a href="#">Breakfast</a></h4>
+              </div>
+            </div>
+            <div class="menu__body">
+              <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="menu__item">
+            <div class="menu__heading">
+              <i class="fas fa-fish"></i>
+              <div class="menu__content">
+                <p>05</p>
+                <h4><a href="#">Lunch</a></h4>
+              </div>
+            </div>
+            <div class="menu__body">
+              <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="menu__item">
+            <div class="menu__heading">
+              <i class="fas fa-cookie"></i>
+              <div class="menu__content">
+                <p>06</p>
+                <h4><a href="#">Dinner</a></h4>
+              </div>
+            </div>
+            <div class="menu__body">
+              <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- End Menu -->
 
   <!-- Begin Middle -->
@@ -331,13 +419,192 @@
 
   <!-- Begin Blog -->
   <section id="blog">
-
+    <div class="container py-5">
+      <div class="blog__heading text-center">
+        <h4 class="title">Latest Posts</h4>
+        <h1 class="sub-title">Blog Posts</h1>
+      </div>
+      <div class="blog__body py-5">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="blog__item">
+              <div class="blog__image">
+                <img class="img-fluid" src="./assets/images/banner1.jpg" alt="" />
+                <div class="blog__image-desc">
+                  <p>Reciepe</p>
+                  <p>
+                    <i class="far fa-clock"></i>
+                    10 Min Cook
+                  </p>
+                </div>
+              </div>
+              <div class="blog__content">
+                <h2>The Best Cookie Recipes To Bake This Weekend</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti quidem libero odit.</p>
+              </div>
+              <div class="blog__footer">
+                <div class="blog__footer-member">
+                  <img class="img-fluid" src="./assets/images/team1.jpg" alt="" />
+                  <span>Rashed Kabir</span>
+                </div>
+                <a href="#">
+                  Read More
+                  <i class="fas fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="blog__item">
+              <div class="blog__image">
+                <img class="img-fluid" src="./assets/images/banner3.jpg" alt="" />
+                <div class="blog__image-desc">
+                  <p>Soup</p>
+                  <p>
+                    <i class="far fa-clock"></i>
+                    10 Min Cook
+                  </p>
+                </div>
+              </div>
+              <div class="blog__content">
+                <h2>The Best Cookie Recipes To Bake This Weekend</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti quidem libero odit.</p>
+              </div>
+              <div class="blog__footer">
+                <div class="blog__footer-member">
+                  <img class="img-fluid" src="./assets/images/team2.jpg" alt="" />
+                  <span>Jannatul Ferdous</span>
+                </div>
+                <a href="#">
+                  Read More
+                  <i class="fas fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="blog__item">
+              <div class="blog__image">
+                <img class="img-fluid" src="./assets/images/banner2.jpg" alt="" />
+                <div class="blog__image-desc">
+                  <p>Drinks</p>
+                  <p>
+                    <i class="far fa-clock"></i>
+                    10 Min Cook
+                  </p>
+                </div>
+              </div>
+              <div class="blog__content">
+                <h2>The Best Cookie Recipes To Bake This Weekend</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti quidem libero odit.</p>
+              </div>
+              <div class="blog__footer">
+                <div class="blog__footer-member">
+                  <img class="img-fluid" src="./assets/images/team3.jpg" alt="" />
+                  <span>Mr. Bruce Wayne</span>
+                </div>
+                <a href="#">
+                  Read More
+                  <i class="fas fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <!-- End Blog -->
 
   <!-- Begin Testimonial -->
   <section id="testimonial">
+    <div class="container py-5">
+      <div class="testimonial__heading text-center">
+        <h4 class="title">Testimonials</h4>
+        <h1 class="sub-title">What People Say</h1>
+      </div>
+      <div class="testimonial__body">
+        <div id="test" class="carousel slide">
 
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/images/team1.jpg" alt="">
+              <i class="fas fa-angle-double-down"></i>
+              <div class="carousel-caption">
+                <h3><em>OMG! I cannot believe. It's Awesome</em></h3>
+                <p>
+                  My new site is so much faster and easier to work with than my old site. They are here to
+                  help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                  Pellen tesque libero ut justo, ultrices in ligula.
+                </p>
+                <div class="testimonial__info">
+                  <h3>Johnson William</h3>
+                  <p>Customer</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/team2.jpg" alt="">
+              <i class="fas fa-angle-double-down"></i>
+              <div class="carousel-caption">
+                <h3><em>Simply the best. Better than all the rest.</em></h3>
+                <p>
+                  My new site is so much faster and easier to work with than my old site. They are here to
+                  help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                  Pellen tesque libero ut justo, ultrices in ligula.
+                </p>
+                <div class="testimonial__info">
+                  <h3>Alexander Sakura</h3>
+                  <p>Customer</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/team3.jpg" alt="">
+              <i class="fas fa-angle-double-down"></i>
+              <div class="carousel-caption">
+                <h3><em>OMG! I cannot believe. It's Awesome</em></h3>
+                <p>
+                  My new site is so much faster and easier to work with than my old site. They are here to
+                  help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                  Pellen tesque libero ut justo, ultrices in ligula.
+                </p>
+                <div class="testimonial__info">
+                  <h3>John Wilson</h3>
+                  <p>Customer</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/team2.jpg" alt="">
+              <i class="fas fa-angle-double-down"></i>
+              <div class="carousel-caption">
+                <h3><em>OMG! I cannot believe. It's Awesome</em></h3>
+                <p>
+                  My new site is so much faster and easier to work with than my old site. They are here to
+                  help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                  Pellen tesque libero ut justo, ultrices in ligula.
+                </p>
+                <div class="testimonial__info">
+                  <h3>Julia Sakura</h3>
+                  <p>Customer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <li data-target="#test" data-slide-to="0" class="active"></li>
+            <li data-target="#test" data-slide-to="1"></li>
+            <li data-target="#test" data-slide-to="2"></li>
+            <li data-target="#test" data-slide-to="3"></li>
+          </ul>
+        
+        </div>
+      </div>
+    </div>
   </section>
   <!-- End Testimonial -->
 
