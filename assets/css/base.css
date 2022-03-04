@@ -8,12 +8,12 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  outline: none;
   font-family: 'Quicksand', sans-serif;
 }
 
 body {
   background-color: var(--white);
+  color: #212121;
 }
 
 a:hover {
@@ -21,15 +21,40 @@ a:hover {
   color: var(--white);
 }
 
+button {
+  outline: none;
+  border: none;
+  background-color: unset;
+}
+
 :root {
   --primary-color: #ff6600;
   --secondary-color: #ffc600;
+  --orange-color: #975b15;
   --font-color: rgba(22, 28, 45, 0.7);
   --bg-black: #232220;
   --color-black: #000;
 }
 
 /* common */
+.dark-mode {
+  background-color: var(--bg-black) !important;
+  color: var(--white) !important;
+  border: 1px solid var(--bg-black) !important;
+}
+
+.bg-black {
+  background-color: var(--bg-black) !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 .title {
   font-size: 20px;
   font-weight: 400;
