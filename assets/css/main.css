@@ -8,6 +8,7 @@
   background-size: cover;
   background-position: initial;
   position: relative;
+  z-index: 100;
 }
 
 .banner__heading {
@@ -923,10 +924,10 @@
 /* back to top */
 .btn-top {
   position: fixed;
-  right: 20px;
+  right: 40px;
   bottom: 20px;
   display: inline-block;
-  z-index: 1000;
+  /* z-index: 1; */
 }
 
 .btn-top i {
@@ -934,7 +935,7 @@
   display: block;
   text-align: center;
   line-height: 60px;
-  font-size: 48px;
+  font-size: 32px;
 }
 
 .cd-top--is-visible {
@@ -943,5 +944,5 @@
 }
 
 .cd-top--fade-out {
-  opacity: 0;
+  opacity: 1;
 }
