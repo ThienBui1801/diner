@@ -924,7 +924,7 @@
 /* back to top */
 .btn-top {
   position: fixed;
-  right: 40px;
+  right: 20px;
   bottom: 20px;
   z-index: 1;
 }
