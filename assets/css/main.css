@@ -926,16 +926,19 @@
   position: fixed;
   right: 40px;
   bottom: 20px;
-  display: inline-block;
-  /* z-index: 1; */
+  z-index: 100;
 }
 
 .btn-top i {
-  color: var(--secondary-color);
+  color: var(--white);
   display: block;
   text-align: center;
-  line-height: 60px;
-  font-size: 32px;
+  line-height: 32px;
+  width: 32px;
+  height: 32px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  font-size: 16px;
 }
 
 .cd-top--is-visible {
