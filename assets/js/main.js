@@ -71,13 +71,7 @@ window.onscroll = function () {
   scrollTop();
 };
 
-function scrollTop() {
-  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
-    backTop.style.display = 'block';
-  } else {
-    backTop.style.display = 'none';
-  }
-}
+
 
 function btnToTop() {
   document.documentElement.scrollTop = 0;
