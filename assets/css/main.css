@@ -8,7 +8,7 @@
   background-size: cover;
   background-position: initial;
   position: relative;
-  z-index: 100;
+  z-index: 999;
 }
 
 .banner__heading {
