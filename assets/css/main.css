@@ -926,7 +926,7 @@
   position: fixed;
   right: 40px;
   bottom: 20px;
-  z-index: 100;
+  z-index: 10;
 }
 
 .btn-top i {
@@ -939,13 +939,4 @@
   background-color: var(--secondary-color);
   border-radius: 50%;
   font-size: 16px;
-}
-
-.cd-top--is-visible {
-  visibility: visible;
-  opacity: 1;
-}
-
-.cd-top--fade-out {
-  opacity: 1;
 }
