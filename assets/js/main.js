@@ -63,3 +63,24 @@ function changeIcon() {
 }
 
 icon.addEventListener('click', changeIcon);
+
+// Back to top
+const backTop = document.getElementById('btn-top');
+
+window.onscroll = function () {
+  scrollTop();
+};
+
+function scrollTop() {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    backTop.style.display = 'block';
+  } else {
+    backTop.style.display = 'none';
+  }
+}
+
+function btnToTop() {
+  document.documentElement.scrollTop = 0;
+}
+
+backTop.addEventListener('click', btnToTop);
