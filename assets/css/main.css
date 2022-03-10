@@ -926,7 +926,7 @@
   position: fixed;
   right: 40px;
   bottom: 20px;
-  z-index: 10;
+  z-index: 1;
 }
 
 .btn-top i {
